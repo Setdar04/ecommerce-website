@@ -1,0 +1,52 @@
+/* Selects all elements */
+* {
+	box-sizing: border-box;
+    margin:0;
+    padding:0;
+} 
+
+/* Body Styling */
+body{
+font-family: sans-serif; 
+background: #FBF3ED
+}
+
+/* Navigation List */
+.nav-list{
+    display: flex; 
+    flex-direction:row; 
+    gap: 2rem; 
+    align-items: center; 
+} 
+
+/* Navigation items */ 
+.nav-item { 
+    margin-right: 1rem; 
+}
+
+.nav-item:last-child {
+    margin-left:auto 
+}
+ /* Nav links */ 
+ .nav-item a{
+    color:black; 
+    font-weight:700; 
+    font-size: 1.1rem; 
+    padding: 0.5rem 1rem; 
+    border-radius: 5px; 
+    transition: all 0.3s ease;
+ }
+
+ /* Hover for links */
+ .nav-item a:hover{ 
+    color: #CDBBAFCC;
+    background: #FBF3ED80;
+ }
+
+ .site-nav { 
+    display:flex; 
+    align-items:center; 
+    justify-content: space-between; 
+    padding: 1rem 2rem; 
+    background: #FBF3ED;
+ }
