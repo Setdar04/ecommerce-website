@@ -1,52 +1,138 @@
-/* Selects all elements */
-* {
-	box-sizing: border-box;
-    margin:0;
+body {
+    margin: 1rem; 
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background:#FBF3ED; 
+    color:black;
+    line-height: 1.6;
+}
+
+h1{ 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.page-title{
+    text-align: center;
+    margin:2rem 0;
+    font-weight: 700;
+}
+
+h2,p,a, small, button{
+     font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+}
+
+a{ 
+    color: black;
+    text-decoration: none;
+}
+.bold{
+    font-weight: 700;
+}
+
+header{
+    position: sticky;
+    top:0;
+    background-color: white;
+    margin-bottom: 6vh;
+    box-shadow: 0 2px 10px #0000;
+}
+
+.site-nav{
+    display:flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 1rem 2rem;
+}
+
+.logo-link img{
+    height:2.5rem;
+}
+
+.site-nav ul{
+    list-style: none; 
+    padding-left: none;
+    display: flex;
+    gap:2rem; 
+    margin-left: auto;
     padding:0;
-} 
-
-/* Body Styling */
-body{
-font-family: sans-serif; 
-background: #FBF3ED
 }
 
-/* Navigation List */
-.nav-list{
-    display: flex; 
-    flex-direction:row; 
-    gap: 2rem; 
-    align-items: center; 
-} 
-
-/* Navigation items */ 
-.nav-item { 
-    margin-right: 1rem; 
+.site-nav li {
+    margin:0;
 }
 
-.nav-item:last-child {
-    margin-left:auto 
+.site-nav li:last-child{
+    margin-left:auto;
+    margin-right: 3vw; 
 }
- /* Nav links */ 
- .nav-item a{
-    color:black; 
-    font-weight:700; 
-    font-size: 1.1rem; 
-    padding: 0.5rem 1rem; 
-    border-radius: 5px; 
-    transition: all 0.3s ease;
- }
+.site-nav a{
+    font-size: 1.2 rem; 
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
 
- /* Hover for links */
- .nav-item a:hover{ 
-    color: #CDBBAFCC;
-    background: #FBF3ED80;
- }
-
- .site-nav { 
-    display:flex; 
-    align-items:center; 
-    justify-content: space-between; 
-    padding: 1rem 2rem; 
+.site-nav a:hover {
     background: #FBF3ED;
- }
+}
+
+.heart-icon{
+    height :1.5rem !important;
+    width:auto;
+
+}
+
+.candles-grid {
+    display:grid !important; 
+    grid-template-columns: repeat(auto-fit, minmax(18rem,1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin:2rem auto;
+    padding: 0 1 rem;
+}
+
+.product-img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.product-name{
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0 0 0.5 rem 0;
+}
+
+.product-price{
+    font-size: 1.2rem;
+    color:#000000;
+    margin: 0 0 1 rem 0;
+}
+
+.add-to-cart-btn{
+    width:100%;
+    padding: 0.8rem;
+    background: #9d8777;
+    color: white;
+    border:none;
+    border-radius: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    cursor:pointer;
+
+}
+
+.add-to-cart-btn:hover{
+    background: #8b8b8b;
+
+}
+
+footer{
+    margin-top:4rem;
+    padding:2rem;
+    text-align: center;
+    color:#000000B3;
+}

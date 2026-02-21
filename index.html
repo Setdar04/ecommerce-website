@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Soléa Candles</title>
 <link rel="stylesheet" href="css/main.css">
-
+<link rel="stylesheet" href="css/products.css">
+<link rel="stylesheet" href="css/layout.css">
+<script src="js/cart.js" defer></script>
 </head>
 <body>
     <header>
@@ -14,65 +16,83 @@
             <img src="images/logo.png" alt="website logo"> </img> </a>
 
         <ul class ="nav-list"> 
-            <li class="nav-item"> 
-                <a href="index.html">Home</a>
-            </li>
-
-            <li class="nav-item"> 
-                <a href="product.htmml">Shop</a>
-            </li>
-            
+            <li class="nav-item"> <a href="index.html">Home</a></li>
+            <li class="nav-item"> <a href="products.html">Shop</a></li>
+            <li class="nav-item"><a href="cart.html">Cart (0)</a></li>
             <li class="nav-item">
-                <a href="about.html">About</a>
-            </li>
-
-            <li class="nav-item"> 
                 <a href="favorites.html">
-                    <img src="images/heart-icon.png">
-                </a>
+                    <img class="heart-icon" src="images/heart-icon.png" alt="Favorites"></a>
             </li>
         </ul>
-    </header>
+    </nav>
+</header>
 
-    <main>
-        <h1> Our Candles </h1>
+<main>
         <h1 class= "page-title">Featured Candles</h1>
-// Candle photos 
 
-<div class="product top-left"> //Candle 1 
-    <img class="product-img" src="images/calm-breeze-candle.png">
-<div class="product-title">Calm Breeze</div>
+<section class="candles-grid">
+<article class="product-card">
+<img class="product-img" src="images/calm-breeze-candle.png" alt="Calm Breeze candle">
+<div class="product-info">
+    <h2 class="product-name">Calm Breeze</h2>
+    <p class="product-price">86kr</p>
+    <button class="add-to-cart-btn" data-product-id="1">Add to cart</button>
 </div>
+</div>
+</article>
 
-<div class="product top-right"> //Candle 2 
- <img class="product-img" src="images/blush-bloom-candle.png">
-<div class="product-title">Blush Bloom</div>
+<article class="product-card">
+<img class="product-img" src="images/blush-bloom-candle.png" alt="Blush Bloom">
+<div class="product-info">
+    <h2 class="product-name">Blush Bloom</h2>
+    <p class="product-price">86kr</p>
+    <button class="add-to-cart-btn" data-product-id="1">Add to cart</button>
 </div>
+</article>
 
-<div class="product top-middle"> //Candle 3 
- <img class="product-img" src="images/forest-rain-candle.png">
-<div class="product-title">Forest Rain</div>
+<article class="product-card">
+<img class="product-img" src="images/forest-rain-candle.png" alt="Forest Rain">
+<div class="product-info">
+    <h2 class="product-name">Forest Rain</h2>
+    <p class="product-price">86kr</p>
+    <button class="add-to-cart-btn" data-product-id="1">Add to cart</button>
 </div>
+</article>
 
-<div class="product bottom-left"> //Candle 4
-<img class="product-img" src="images/morning-brew-candle.png">
-<div class="product-title">Morning Brew</div>
+<article class="product-card">
+<img class="product-img" src="images/morning-brew-candle.png" alt="Morning Brew">
+<div class="product-info">
+    <h2 class="product-name">Morning Brew</h2>
+    <p class="product-price">86kr</p>
+    <button class="add-to-cart-btn" data-product-id="1">Add to cart</button>
 </div>
+</article>
 
-<div class="product bottom-right"> //Candle 5
-<img class="product-img" src="images/warm-honey-candle.png">
-<div class="product-title">Warm Honey</div>
+<article class="product-card">
+<img class="product-img" src="images/warm-honey-candle.png" alt="Warm Honey">
+<div class="product-info">
+    <h2 class="product-name">Warm Honey</h2>
+    <p class="product-price">86kr</p>
+    <button class="add-to-cart-btn" data-product-id="1">Add to cart</button>
 </div>
+</article>
 
-<div class="product bottom-far-right"> //Candle 6
-<img class="product-img" src="images/golden-sun-candle.png">
-<div class="product-title">Golden Sun</div>
+<article class="product-card">
+<img class="product-img" src="images/golden-sun-candle.png" alt="Golden Sun">
+<div class="product-info">
+    <h2 class="product-name">Golden Sun</h2>
+    <p class="product-price">86kr</p>
+    <button class="add-to-cart-btn" data-product-id="1">Add to cart</button>
 </div>
+</article>
 
 
 
 
 
 </main>
+<footer>
+    <small>&copy; 2026 Soléa Candles. All rights reserved</small>
+</footer>
 </body>
 </html>
