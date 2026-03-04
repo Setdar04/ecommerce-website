@@ -1,7 +1,6 @@
 body {
   margin: 1rem;
   font-family: Georgia, "Times New Roman", Times, serif;
-  background: #fbf3ed;
   color: black;
   line-height: 1.6;
 }
@@ -14,10 +13,9 @@ h1 {
 
 .page-title {
   text-align: center;
-  margin: 2rem;
+  margin: 2rem 0;
   font-weight: 700;
 }
-
 h2,
 p,
 a,
@@ -41,7 +39,6 @@ header {
   background-color: white;
   margin-bottom: 6vh;
   box-shadow: 0 2px 10px #0000;
-  z-index: 9999;
 }
 
 .site-nav {
@@ -74,7 +71,7 @@ header {
   margin-right: 3vw;
 }
 .site-nav a {
-  font-size: 1.2rem;
+  font-size: 1.2 rem;
   font-weight: 700;
   padding: 0.5rem 1rem;
   border-radius: 5px;
@@ -89,31 +86,13 @@ header {
   width: auto;
 }
 
-.product-container {
-  position: relative;
-  width: 100%;
-}
-
-.heart-outline {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  width: 1.6rem;
-  cursor: pointer;
-  transition: opacity 0.3s ease;
-}
-
-.heart-outline:hover {
-  opacity: 0.8;
-}
-
 .candles-grid {
   display: grid !important;
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   gap: 2rem;
   max-width: 1200px;
   margin: 2rem auto;
-  padding: 0 1rem;
+  padding: 0 1 rem;
 }
 
 .product-img {
@@ -122,16 +101,16 @@ header {
   object-fit: cover;
 }
 
-.product-name a {
+.product-name {
   font-size: 1.3rem;
   font-weight: 700;
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 0.5 rem 0;
 }
 
 .product-price {
   font-size: 1.2rem;
   color: #000000;
-  margin: 0 0 1rem 0;
+  margin: 0 0 1 rem 0;
 }
 
 .add-to-cart-btn {
@@ -150,32 +129,6 @@ header {
   background: #8b8b8b;
 }
 
-.cart-remove-button {
-  width: 100%;
-  padding: 0.8rem;
-  background: #9d8777;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 1rem;
-  cursor: pointer;
-  margin-top: 1rem;
-}
-
-.cart-remove-button:hover {
-  background: #8b8b8b;
-}
-
-.cart.grid .product-img {
-  height: auto;
-  max-height: 300px;
-  width: 100%;
-  object-fit: cover;
-}
-.cart-grid .product-card {
-  max-width: 300px;
-}
 footer {
   margin-top: 4rem;
   padding: 2rem;
