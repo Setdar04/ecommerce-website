@@ -10,6 +10,7 @@ function updateCartCount() {
 updateCartCount();
 
 // Add to cart
+// the following 3 lines was adapted from : https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
 let cartButtons = document.getElementsByClassName("add-to-cart-btn");
 for (let i = 0; i < cartButtons.length; i++) {
   cartButtons[i].addEventListener("click", addToCart);
@@ -29,6 +30,7 @@ function addToCart() {
 }
 
 // Remove from Cart
+// the following 8 lines of code was adapted from https://chatgpt.com/share/69a2d97c-de04-8013-a5f5-1f3f6e3432e0
 function removeFromCart() {
   const id = this.dataset.id;
   cartArr = cartArr.filter((item) => item.id !== id);
@@ -41,7 +43,7 @@ function removeFromCart() {
 }
 
 // Display Cart
-const cartGrid = document.querySelector(".cart-grid");
+// the following 13 lines of code was adapted from https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement and https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener and https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName
 if (cartGrid) {
   for (let i = 0; i < cartArr.length; i++) {
     let cartElement = document.createElement("article");
@@ -60,8 +62,6 @@ if (cartGrid) {
     document.getElementsByClassName("cart-remove-button");
   for (let i = 0; i < cartRemoveButtons.length; i++) {
     cartRemoveButtons[i].addEventListener("click", removeFromCart);
-
-    //for (let i = 0; i < cartArr.length; i++) { cartArr.splice(i, 1); break;}
   }
 }
 updateCartCount();
