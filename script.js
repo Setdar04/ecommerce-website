@@ -44,6 +44,7 @@ function removeFromCart() {
 
 // Display Cart
 // the following 13 lines of code was adapted from https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement and https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener and https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName
+const cartGrid = document.querySelector(".cart-grid");
 if (cartGrid) {
   for (let i = 0; i < cartArr.length; i++) {
     let cartElement = document.createElement("article");
